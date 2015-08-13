@@ -1,0 +1,71 @@
+<!DOCTYPE html Public "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+        <link rel="stylesheet" href="camping.css">
+</head>
+<body>
+
+		<! Title, Image, and Background>
+	 <div class="jumbotron">
+      <div class="container">
+        <h1>Camping 0.1.2.3</h1>
+        <p>Did I bring the tent?</p>
+      </div>
+    </div> 
+    <div class="produce">
+    <div class="container">
+        <h1>Create your list of gear you need and check off what you have</h1>
+            <p>Do you have a tent? You packed the tent, right?</p>
+
+			<!Check List for Camping>
+		<form name="myCheckListForm">
+            <input type="text" name="checklistItem">
+            <input type="button" value="Add to List" onclick="processForm()">
+        </form>
+
+        <div id="checkList"></div>
+		
+		<script>
+var i = 0;
+function processForm() {
+
+    i++;
+    var listItem = document.myCheckListForm.checklistItem.value;
+	
+	
+	var listed = '<div id="item' + i + '"><input type="checkbox" onclick="crossedOut(\'item'+ i + '\')" />' + listItem + '</div>';
+
+	document.getElementById("checkList").innerHTML += listed;
+
+}
+
+function crossedOut(item) {
+	document.getElementById(item).className = "checked-off";
+}
+</script>
+
+		<! Links for Camping info and Facts >
+	<div class="learn-more">
+	  <div class="container">
+		<div class="row">
+	      <div class="col-md-4">
+			<h3>Know what you need</h3>
+			<p>Camping is more than just a tent and a sleeping bag</p>
+			<p><a href="http://www.lovetheoutdoors.com/camping/checklists.htm">Camping Gear List</a></p>
+	      </div>
+		  <div class="col-md-4">
+			<h3>Who loves camping?</h3>
+			<p>Breathe in the stars and the camp fire smoke</p>
+			<p><a href="http://camping.about.com/od/campingadviceandtips/a/whygocamping.htm">Great reasons to get out and camp</a></p>
+		  </div>
+		  <div class="col-md-4">
+			<h3>Tips and Guides for safe and fun camping</h3>
+			<p>Bears are cute, but do you want one in bed?</p>
+			<p><a href="http://www.cdc.gov/family/camping/">Safety Tips</a></p>
+		  </div>
+	    </div>
+	  </div>
+	</div>
+</body>
+</html>

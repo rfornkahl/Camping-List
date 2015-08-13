@@ -1,0 +1,74 @@
+
+.jumbotron {
+  background-image:url('http://www.wallsave.com/wallpapers/2000x1328/camping/1920543/camping-footsteps-africa-beer-botswana-bush-camp-chairs-free-1920543.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .container {
+  position: auto;
+  top:100px;
+}
+
+.jumbotron h1 {
+  color: #FF8C00;
+  text-shadow: 
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+  font-size: 68px;  
+  font-family: 'Tahoma', sans-serif;
+  font-weight: bold;
+  position: center;
+  margin-right: 500px;
+  margin-left: auto;
+  padding: 1px 5px;
+  
+}
+
+.jumbotron p {
+  font-size: 25px;
+  color: #fff;
+  font-family: Tahoma;
+  text-shadow: 
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+  padding-left: 5px;
+  padding-top: 300px;
+}
+
+.learn-more {
+  background-color: #f7f7f7;
+}
+
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.learn-more a {
+  color: #00b0ff;
+}
+
+.produce h1{
+	font-family: "Tahoma";
+	font-size: 40px;
+	color: #588EBC;
+}
+
+.produce p{
+	font-family: "Tahoma";
+	font-size: 22px;
+	color: #FFAE19;
+	
+}
+
+
+.checked-off{
+    text-decoration: line-through;    
+}
